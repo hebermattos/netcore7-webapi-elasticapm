@@ -1,4 +1,5 @@
 using Elastic.Apm.AspNetCore;
+using Elastic.Apm.NetCoreAll;
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
 
@@ -16,7 +17,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.UseElasticApm(app.Configuration);
+app.UseAllElasticApm(app.Configuration);
 
 app.UseSwagger();
 app.UseSwaggerUI();
