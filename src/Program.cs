@@ -16,16 +16,10 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-//  app.UseElasticApm();
+app.UseElasticApm(app.Configuration);
 
-// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-//}
-
-// app.UseHttpsRedirection();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseAuthorization();
 
