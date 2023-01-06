@@ -10,3 +10,7 @@ net core 7 web api with elastic apm
 
 ## set docker apm server url
 ![appsettings](./img/appsettings.png)
+
+## explore
+![fun](./img/fun.png)
+
