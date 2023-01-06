@@ -2,4 +2,4 @@
 
 net core 7 web api with elastic apm
 
-[<img src="img/nuget.png">](nuget)
+![nuget](./img/nuget.png)
